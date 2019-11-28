@@ -1,22 +1,80 @@
-.App {
-  text-align: center;
+body{
+  background-color: #EAEBEC;
 }
 
-.App-logo {
-  height: 40vmin;
+.app {
+  width: 350px;
+  margin:0 auto;
+  text-align: left;
+  border: 1px solid #000;
+  padding: 5px 0;
+  margin-top: 50px;
+  border-radius: 5px;
+  background-color: #3A4655;
+  border: solid 1px #3A4655;
+  box-shadow: 0 8px 50px -7px black;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.calculatrice {
+  margin-top: 10px;
 }
 
-.App-link {
-  color: #09d3ac;
+.calculatrice button {
+  width: 60px;
+  height: 60px;
+  vertical-align: top;
+  margin: 5px;
+  border-radius: 5px;
+  background: #425062;
+  border:none;
+  color: #FFF;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.calculatrice button:focus {
+  outline:0;
+}
+
+.calculatrice button.enter {
+  height: 130px;
+  float:right;
+  margin: 5px;
+}
+
+.ecran {
+  width: 340px;
+  height: 100px;
+  margin:0 auto;
+  color: #FFF;
+  position: relative;
+  overflow: auto;
+  border-radius: 5px;
+  font-size: 20px;
+}
+
+.ecran div:first-of-type{
+  position: absolute;
+  bottom: 30px;
+  left: 10px;
+}
+
+.ecran div:last-of-type{
+  position: absolute;
+  bottom: 0;
+  left: 10px;
+}
+
+.blink-me {
+  color: #E0B612;
+  animation: pulse 1s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    color: #E0B612;
+  }
+  100% {
+    color: #3A4655;
+  }
 }
